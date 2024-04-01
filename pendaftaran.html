@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="RGIZEN Website">
+        <meta name="keywords" content="Website Ergi">
+        <meta name="author" content="Ergi Zenila Marta Sasmige"> 
+        <meta name="nim" content="233307010">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>RGIZEN</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="background" name="background"></body>
+    <main>
+        <div class="nav">
+            <nav>
+                <img src="image/logo.png" alt="logo" width="10%" height="10%">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="profil.html">PROFIL</a></li>
+                    <li><a href="tentangsaya.html">TENTANG SAYA</a></li>
+                    <li><a href="jadwal.html">JADWAL PERKULIAHAN</a></li>
+                    <li><a href="hobi.html">HOBI</a></li>
+                    <li><a href="pendaftaran.html">PENDAFTARAN</a></li>
+                </ul>
+            </nav>
+            <div class="form">
+                <h1>Tentang Saya</h1>
+                    <form action="#">
+                        <div class="info">
+                            <div class="input">
+                                <label for="namalengkap">Nama Lengkap</label>
+                                <input type="text" id="namalengkap" name="namalengkap" placeholder="Masukkan Nama Lengkap Anda!" required>
+                            </div>
+                            <div class="input">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" placeholder="Masukkan Username Anda!" required>
+                            </div>
+                            <div class="input">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="email@gmail.com" required>
+                            </div>
+                            <div class="input">
+                                <label for="telepon">Telepon</label>
+                                <input type="text" id="telepon" name="telepon" placeholder="xxxx-xxxx-xxxx" required>
+                            </div>
+                            <div class="input">
+                                <label for="password">Password</label>
+                                <input type="text" id="password" name="password" placeholder="Masukkan Password Anda!" required>
+                            </div>
+                            <div class="input">
+                                <label for="konformasipassword">Konfirmasi Password</label>
+                                <input type="text" id="konformasipassword" name="konformasipassword" placeholder=" Password Anda!" required>
+                            </div>
+                        </div> 
+                        <div class="kelamin">
+                            <span class="kelamin1">Jenis Kelamin</span>
+                            <div class="kelamin2">
+                                <input type="radio" name="kelamin" id="lakilaki" required>
+                                <label for="lakilaki">Laki-Laki</label>
+                                <input type="radio" name="kelamin" id="perempuan" required>
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="submit">
+                        <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                <hr>
+                    <p style="color: hotpink;">copyright @rgizen</p>
+                </hr>
+            </div>
+        </div>
+    </main>
+    <script src="js/style.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+body {
+    background-image: url(/image/large-triangles.svg);
+}
+.background {
+    background-image: url(/image/large-triangles.svg) !important;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.nav {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: hotpink;
+}
+.nama {
+    margin-left: 10%;
+    margin-top: 10%;
+    animation: transitionIn 2s;
+}
+.nama h1 {
+    font-size: 50px;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+span {
+    color: hotpink;
+}
+.nama p {
+    color: darkblue;
+    line-height: 20px;
+}
+.foto {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    animation: transitionIn 1s;
+}
+.foto img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.foto:hover .bg {
+    bottom: 40px;
+}
+.foto:hover .ergi {
+    left: 45%;
+}
+.profil {
+    animation: transitionIn 2s;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgba(33, 150, 243, 0.3);
+    padding: 10px; 
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 5px;
+    color: darkblue;
+}
+.profil h1 {
+    color: hotpink;
+}
+.tabel tr td:first-child {
+    font-weight: 700;
+}
+.tabel tr td {
+    color: darkblue;
+    padding: 3px;
+    border: 0px;
+}
+.profil p {
+    color: hotpink;
+}
+.deskripsi {
+    animation: transitionIn 2s;
+    margin-left: 27%;
+    margin-top: 1%;
+    width: 700px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgba(33, 150, 243, 0.3);
+    padding: 10px; 
+    border-radius: 15px;
+    color: darkblue;
+    box-shadow: 10px 10px 20px 5px;
+}
+.deskripsi h1 {
+    color: hotpink;
+}
+.deskripsi p {
+    font-size: 15px;
+}
+.jadwal {
+    animation: transitionIn 2s;
+    margin-left: 23%;
+    margin-top: 1%;
+    width: 800px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgba(33, 150, 243, 0.3);
+    padding: 10px; 
+    border-radius: 15px;
+    color: darkblue;
+    box-shadow: 10px 10px 20px 5px;
+}
+.jadwal h1 {
+    color: hotpink;
+}
+.jadwal p {
+    font-size: 15px;
+}
+table {
+    border-collapse: collapse;
+}
+tr td {
+    border: 1px black solid;
+}
+.hobi {
+    animation: transitionIn 2s;
+    margin-left: 17%;
+    margin-top: 1%;
+    width: 990px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgba(33, 150, 243, 0.3);
+    padding: 10px; 
+    border-radius: 15px;
+    color: darkblue;
+    box-shadow: 10px 10px 20px 5px;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.hobi h1 {
+    color: hotpink;
+    text-align: left;
+}
+.hobi p {
+    font-size: 15px;
+}
+.hobi-item {
+    flex: 0 0 calc(16.66% - 10px);
+    margin: 10px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+.hobi-item img {
+    width: 13%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+hr {
+    display: inline-block;
+}
+.form {
+    animation: transitionIn 2s;
+    margin-left: 27%;
+    margin-top: 1%;
+    width: 700px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgba(33, 150, 243, 0.3);
+    padding: 10px; 
+    border-radius: 15px;
+    color: darkblue;
+    box-shadow: 10px 10px 20px 5px;
+}
+.form h1 {
+    color: hotpink;
+}
+.form p {
+    font-size: 20px;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;  
+}
+.input:nth-child(2n) {
+    justify-content: end;
+}
+.input label {
+    width: 95%;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.input input {
+    height: 40px;
+    width: 95%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid darkblue;
+    padding: 0 10px;
+    font-size: 17px;
+    background-color: rgba(248, 24, 148, 0.3);
+    color: black solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.kelamin {
+    font-size: 24px;
+}
+.kelamin1 {
+    color: darkblue;
+}
+.kelamin2 {
+    margin: 15px 0;
+    color: black;
+    font-size: 17px;
+}
+.kelamin2 {
+    padding: 0 20px 0 5px;
+}
+.kelamin2 input label .submit input {
+    cursor: pointer;
+}
+.submit {
+    margin-top: 40px;
+}
+.submit input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgba(248, 24, 148, 0.3);
+}
+.submit input:hover {
+    background-color: hotpink;
+}
